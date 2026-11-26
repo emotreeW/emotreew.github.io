@@ -123,6 +123,23 @@
       padding: 1rem 1.1rem;
     }
 
+    .project {
+      border: 1px solid var(--line);
+      padding: 1rem 1.1rem;
+    }
+    .project h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.05rem;
+      font-weight: 650;
+    }
+    .project h3 a {
+      color: var(--green-dark);
+      text-decoration: none;
+    }
+    .project h3 a:hover { text-decoration: underline; }
+    .project p { margin: 0; color: var(--muted); }
+    .contact a { color: var(--green-dark); }
+
     @media (max-width: 720px) {
       .nav-inner { padding: 0.7rem 1rem; }
       .nav-links {
@@ -173,7 +190,10 @@
 
     <section id="research">
       <h2>Research</h2>
-      <div class="placeholder">项目与研究方向待补充。</div>
+      <article class="project">
+        <h3><a href="https://github.com/emotreeW/cheng-parkour-fusion-notes">cheng-parkour-fusion-notes</a></h3>
+        <p>Cheng extreme-parkour 上，视觉潜变量 z 进入学生 actor 的接法对照（concat / FiLM / hypernetwork）。仓库里有改过的代码、训练评测脚本和 mxd 表。</p>
+      </article>
     </section>
 
     <section id="publications">
@@ -186,9 +206,9 @@
       <div class="placeholder">简历 PDF 待上传。</div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
       <h2>Contact</h2>
-      <div class="placeholder">邮箱与链接待补充。</div>
+      <p><a href="https://github.com/emotreeW">GitHub</a></p>
     </section>
   </main>
 </body>
